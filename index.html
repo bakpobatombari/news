@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="desktop">
+<div class="container" id="desktop">
+  <nav class="navbar container-fluid webnav">
+    <h1>W</h1>
+    <div class="links">
+      <li><a href="">Home</a></li>
+      <li><a href="">New</a></li>
+      <li><a href="">Popular</a></li>
+      <li><a href="">Categories</a></li>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-md-7">
+      <img src="./assets/images/image-web-3-desktop.jpg" style="width: 100%;" alt="">
+      <div class="row">
+        <div class="col-md-5">
+      <h1 style="font-size: 40px;">The Bright Future of Web 3.0</h1>
+    </div>
+    <div class="col-md-4">
+      <p style="font-size: 19px;">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But it is really fulfiling its promise</p>
+      <button class="read-more">READ MORE</button>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4 sec-hlf">
+      <h1 style="color:#CCA168">New</h1>
+      <div class="news">
+        <h3 class="news-title">
+          Hydrogen VS Electric Cars</h3>
+        <span class="news-body"> Will hydrogen-fueled cars ever catch up to EVs?</span>
+      </div>
+      <hr>
+      <div class="news">
+        <h3 class="news-title">The Downsides of AI Artistry</h3>
+        <span class="news-body">  What are the possible adverse effects of on-demand AI image generation?</span>
+      </div>
+      <hr>
+      <div class="news">
+        <h3 class="news-title">  Is VC Funding Drying Up?</h3>
+        <span class="news-body">  Private funding by VC firms is down 50% YOY. We take a look at what that means.</span>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <div class="container col-md-12">
+    <div class="row" style="column-gap: 0;">
+      <div class="col-md-3 card">
+        <div class="row" style="column-gap: 1px;">
+          <div class="col-md-3">
+            <img src="./assets/images/image-retro-pcs.jpg" style="height: 50%;" alt="">
+          </div>
+          <div class="col-md-5 n-h">
+            <h2>01</h2>
+            <h3> Reviving Retro PCs</h3>
+            <h4>What happens when old PCs are given modern upgrades?</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 card">
+        <div class="row" style="column-gap: 1px;">
+          <div class="col-md-3">
+            <img src="./assets/images/image-retro-pcs.jpg" style="height: 50%;" alt="">
+          </div>
+          <div class="col-md-8 n-h">
+            <h2>02</h2>
+            <h3>  Top 10 Laptops of 2022</h3>
+            <h4>  Our best picks for various needs and budgets.</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 card">
+        <div class="row" style="column-gap: 1px;">
+          <div class="col-md-3">
+            <img src="./assets/images/image-retro-pcs.jpg" style="height: 50%;" alt="">
+          </div>
+          <div class="col-md-6 n-h">
+            <h2>03</h2>
+            <h3>  The Growth of Gaming</h3>
+            <h4>   How the pandemic has sparked fresh opportunities.</h4>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="mobile">
+  <nav class="navbar" id="mobile">
+    <h1>W</h1>
+    <div class="links">
+      <li><a style="font-size: 19px;" onclick="openNav()">&#9776;</a></li>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="homepage">
+  <img src="./assets/images/image-web-3-mobile.jpg" style="height: 40vh; width:100%" alt="">
+  <h1 style="font-size: 40px;">The Bright Future of Web 3.0</h1>
+  <p style="font-size: 19px;">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But it is really fulfiling its promise</p>
+  <button class="read-more">READ MORE</button>
+  <div class="col-md-12 sec-hlf">
+    <h1 style="color:#CCA168">New</h1>
+    <div class="news">
+      <h3 class="news-title">
+        Hydrogen VS Electric Cars</h3>
+      <span class="news-body"> Will hydrogen-fueled cars ever catch up to EVs?</span>
+    </div>
+    <hr>
+    <div class="news">
+      <h3 class="news-title">The Downsides of AI Artistry</h3>
+      <span class="news-body">  What are the possible adverse effects of on-demand AI image generation?</span>
+    </div>
+    <hr>
+    <div class="news">
+      <h3 class="news-title">  Is VC Funding Drying Up?</h3>
+      <span class="news-body">  Private funding by VC firms is down 50% YOY. We take a look at what that means.</span>
+    </div>
+    <hr>
+  </div>
+</div>
+<div class="mc col-md-12" style="margin-bottom: 4rem;">
+  <div class="row" style="column-gap: 1px;">
+    <div class="col-md-3">
+      <img src="./assets/images/image-retro-pcs.jpg" style="height: 50%;" alt="">
+    </div>
+    <div class="col-md-5 n-h">
+      <h2>01</h2>
+      <h3> Reviving Retro PCs</h3>
+      <h4>What happens when old PCs are given modern upgrades?</h4>
+    </div>
+  </div>
+</div>
+<div class="mc col-md-12" style="margin-bottom: 4rem;">
+  <div class="row" style="column-gap: 1px;">
+    <div class="col-md-3">
+      <img src="./assets/images/image-retro-pcs.jpg" style="height: 50%;" alt="">
+    </div>
+    <div class="col-md-8 n-h">
+      <h2>02</h2>
+      <h3>  Top 10 Laptops of 2022</h3>
+      <h4>  Our best picks for various needs and budgets.</h4>
+    </div>
+  </div>
+</div>
+
+<div class="mc col-md-12">
+  <div class="row" style="column-gap: 1px;">
+    <div class="col-md-3">
+      <img src="./assets/images/image-retro-pcs.jpg" style="height: 50%;" alt="">
+    </div>
+    <div class="col-md-6 n-h">
+      <h2>03</h2>
+      <h3>  The Growth of Gaming</h3>
+      <h4>   How the pandemic has sparked fresh opportunities.</h4>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+<div class="sidenav" id="sidenav">
+  <span style="position: absolute;left:1rem; font-size:24px;top:1rem" onclick="closeNav()">&times;</span>
+  <div class="linker">
+    <li><a href="">Home</a></li>
+    <li><a href="">New</a></li>
+    <li><a href="">Popular</a></li>
+    <li><a href="">Trending</a></li>
+    <li><a href="">Categories</a></li>
+  </div>
+</div>
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>
